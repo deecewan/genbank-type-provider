@@ -14,5 +14,6 @@ all:
 	pdflatex --output-directory tmp tmp/report.tex
 	biber --input-directory tmp --output-directory tmp report
 	pdflatex --output-directory tmp tmp/report.tex
+	pdflatex --output-directory tmp tmp/report.tex
 	mv tmp/report.pdf report.pdf
 	rm -r tmp
