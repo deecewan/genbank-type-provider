@@ -24,6 +24,7 @@
 \usepackage{nameref} % Reference names and make them links (I think?)
 \usepackage[backref=true]{hyperref} % Should be last package include.  Adds links that work
 \usepackage[numbered,framed]{matlab-prettifier} % Pretty-print MATLAB code
+\usepackage{setspace}
 
 % `caption' setup
 \captionsetup{justification=centering}
@@ -48,9 +49,9 @@ $endfor$
 \fancyhf{}
 \setlength{\headheight}{15pt}
 \lhead{Buchan-Swanson, David}
-\rhead{\thepage}
-\lfoot{April 19, 2018}
-\rfoot{F\# Type Provider for GenBank}
+\rhead{April 19, 2018}
+\lfoot{Simplifying Bioinformatic Dataset Access}
+\rfoot{\thepage}
 \renewcommand{\footrulewidth}{0.4pt}
 
 \begin{document}
@@ -60,6 +61,7 @@ $endfor$
   \pagenumbering{roman}
   % Changes the page style to plain - only display page number - no headers
   \pagestyle{plain}
+  \doublespacing
 
   \section*{Executive Summary}
   \addcontentsline{toc}{section}{Abstract}
@@ -67,10 +69,12 @@ $endfor$
   This is the abstract
   \newpage
 
+  \singlespacing
   \tableofcontents
 
   % then clears the page, and goes back to arabic numerals
   \newpage
+  \doublespacing
   \pagestyle{fancy} % sets the page style back to nice headers
   \pagenumbering{arabic}
   \setcounter{page}{1}
