@@ -23,13 +23,47 @@ Also known as computational biology, genetic informatics and systems biology,
 bioinformatics is the field of study that combines biologic data with software
 for analysis, storage and distribution [@lesk_arthur_m._bioinformatics_2013].
 
-// TODO: More info in here
+#### Sequencing and Genome Assembly
 
-#### Sequencing and Gene Assembly
+*Under Construction*
 
 - OSS sequence processing to see what people are doing currently in the space
 - biopython/bioperl (falling out of favour)/biojava
 
+#### Genbank
+
+GenBank is a database managed by the National Center for Biotechnology
+Information (NCBI, a department of the US government) and currently contains
+'publicly available nucelotide sequences for 400,000 species
+[@benson_genbank_2018]. Submissions to the database are handled primarily
+online, through the BankIt system. New releases of all sequences (a public
+update to the database) is made every two months. From the same report delivered
+in 2005, @benson_genbank_2005 notes that at this point in time there are only
+165,000 species categorised in the database, showing continued growth even into
+recent times.
+
+The similarities between different sequences in the GenBank database if one of
+the core ways researchers are using bioinformatics to further the general
+understanding of biology. [@pertsemlidis_having_2001]. The Basic Local Alignment
+Search Tool (BLAST), another product of the NCBI, is a 'sequence similarity
+search program', which is one of the most used of such tools available to the
+public [@mcginnis_blast:_2004].
+
+@pertsemlidis_having_2001 identifies that sequence comparison falls into one of
+three main categories - identity, similarity and homology [^2]. These are
+differentiated as follows:
+
+- Identity refers to the repeated occurrence of *the same* nucleotide in the
+  same position in aligned sequences
+
+- Similarity looks only at approximate matches, and is only a useful measure of
+  'relativeness' between them and not an absolute scoring.
+
+- Homology is a statement of *sameness* not just of the 2 sequences in question,
+  but of all their ancestor sequences back to a common ancestor of the two.
+
+[^2]: These are, according to @pertsemlidis_having_2001, often used
+interchangeably, but have in fact quite different meanings.
 
 ### Type Inference + Type Safety
 
@@ -93,12 +127,14 @@ required, and analysing it to determine a general shape. This allows, for
 instance, the compiler to provide static analysis of some remote JSON retrieved
 from an HTTP request without the use of marshallers or similar.
 
-### Genbank
+The father of type providers, and indeed the F# programming language, presented
+a tutorial on the use of type providers with financial data, noting that "most
+financial programming and modelling is highly information rich, but our
+programming tools are often information sparse" [@syme_world_2014]. The tutorial
+goes on to explain how the use of type providers to turn this data into a
+first-class citizen of F# to "support the integration of large-scale information
+sources".
 
-- what is genbank?
-- why is it important?
-- genbank data format
-- genbank data set
 
 ## Research Problem
 
