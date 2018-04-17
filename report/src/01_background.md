@@ -146,9 +146,8 @@ the data to become a first-class citizen of the programming language to make it
 easier to access data from GenBank and build out programs using bioinformatics
 data.
 
-The goal is to have a type provider released to the community that is usable and
-useful.
-
 ### Research Questions
 
-- How can we simplify programmatic access to large bioinformatic datasets?
+The main question driving all of the research is:
+
+> How can we simplify programmatic access to large bioinformatic datasets?
