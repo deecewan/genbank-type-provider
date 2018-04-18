@@ -29,18 +29,35 @@ The goals of the project are:
 - widen the scope of the types provided to allow for more sources than just
   GenBank
 
+- release a type provider to the community to assist in the simplification of
+  programmatic access to bioinformatic data
+
 ## Steps for completion
 
 Firstly, an in-depth look into the existing type provider (available
 [here](https://github.com/jamesmhogan/Experimental-dotnetbioGenBankProvider))
-will be done in order to figure out exactly what needs to be changed.
+will be done in order to figure out exactly what needs to be changed. This type
+provider was completed using the .NET Bio library. .NET Bio provides a range of
+parsers and formatters, so an exploration of this library will provide a good
+stepping stone to decide what is feasible to complete within the available
+timeframe.
 
-Examining the syntax of the GenBank database format will be required to find out
-what is available to extend the project.
+As part of understanding the .NET Bio library, it is important to examine the
+syntax of the GenBank database format will be required to find out what is
+available to extend the project. The GenBank format is a commonly used
+format in the industry, so it is critical that it be understood correctly to
+build accurate parsers (or to ensure existing parsers are working as intended).
+This will involve finding any relevant specifications.
 
 Consult with the community of potential users to determine what is required, and
-decide on a feature set for the 'optimal' case solution.
+decide on a feature set for the 'optimal' case solution. The existing
+implementation already has some proposed future work that can be used as a
+starting point. Given that a goal of this research is to provide a tool to the
+community, it is important that the delivered tool actually suits the purposes
+required.
 
 Further research on type providers and their creation through way of tutorials
-by leaders in the space, such as Tomas Petricek and Don Syme.
+by leaders in the space, such as Tomas Petricek and Don Syme. There are many
+learning resources, both written and in video form, that can be used to better
+understand type providers at a core level.
 

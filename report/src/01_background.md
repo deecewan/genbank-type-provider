@@ -65,27 +65,9 @@ differentiated as follows:
 [^2]: These are, according to @pertsemlidis_having_2001, often used
 interchangeably, but have in fact quite different meanings.
 
-### Type Inference + Type Safety
-
-Type safety is a critical component of many programming languages to ensure
-correctness of the programs being written.  The power and sophistication of type
-systems are able to transform a language, and make it easier to communicate
-one's intentions - both to the compiler and any future readers
-[@cardelli_typeful_1989]. @cardelli_typeful_1989 goes on to explain that type
-systems adapt equally as well to all programming paradigms, including functional
-- the main subject of this paper in the form of F#.
-
-Type inference takes this one step further.
-@duggan_explaining_1996 explains this this process as a compile-time
-reconstruction of missing type information by analysing the usage of variables
-within the program.  This affordance gives programmers a high degree of safety
-with less additional programming required.
-
-To bring this closer to the scope of this paper, @hutchison_type_2006 go into
-depth around type inference with specific regard to systems biology. Whilst
-looking at a different programming language and data set (Systems Biology Markup
-Language and BIOCHAM), it resolves to show that analysing biochemical models
-using type inference provides 'accurate and useful information'.
+Given the large amount of data present, and the range of the datasets available,
+we now turn out attention to methodologies that may be employed used in
+management.
 
 ### Type Providers
 
@@ -109,6 +91,31 @@ accessing and handling a small subset of data from a much larger one
 [^1]: It should be noted that it is, of course, not possible to process an
 infinite information space. The meaning in this case is that the compiler will
 not limit the size of the space - a computer's available memory does.
+
+A type provider instils a far greater trust by the programmer in the program,
+due to type safety.
+
+### Type Inference + Type Safety
+
+Type safety is a critical component of many programming languages to ensure
+correctness of the programs being written.  The power and sophistication of type
+systems are able to transform a language, and make it easier to communicate
+one's intentions - both to the compiler and any future readers
+[@cardelli_typeful_1989]. @cardelli_typeful_1989 goes on to explain that type
+systems adapt equally as well to all programming paradigms, including functional
+- the main subject of this paper in the form of F#.
+
+Type inference takes this one step further.
+@duggan_explaining_1996 explains this this process as a compile-time
+reconstruction of missing type information by analysing the usage of variables
+within the program.  This affordance gives programmers a high degree of safety
+with less additional programming required.
+
+To bring this closer to the scope of this paper, @hutchison_type_2006 go into
+depth around type inference with specific regard to systems biology. Whilst
+looking at a different programming language and data set (Systems Biology Markup
+Language and BIOCHAM), it resolves to show that analysing biochemical models
+using type inference provides 'accurate and useful information'.
 
 ### First Class Data
 
@@ -134,7 +141,6 @@ programming tools are often information sparse" [@syme_world_2014]. The tutorial
 goes on to explain how the use of type providers to turn this data into a
 first-class citizen of F# to "support the integration of large-scale information
 sources".
-
 
 ## Research Problem
 
